@@ -1,0 +1,30 @@
+.card > h1 {
+  color: black;
+  text-align: center;
+  text-shadow: 1px 2px 10px black;
+  // rgba(222, 49, 99, 1);
+  //  rgba(84, 153, 199);
+  font-weight: 500;
+  margin-bottom: 20px !important;
+}
+
+.content {
+  // display: flex;
+  text-align: center;
+}
+.info {
+  margin-top: 25px !important;
+}
+
+.image > img {
+  // margin-right: 10px !important;
+  width: 200px;
+  height: 200px;
+  //   box-shadow: 3px 1px 10px black;
+  border: 3px solid black;
+}
+
+.info p {
+  font-size: 18px;
+  line-height: 25px;
+}

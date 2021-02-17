@@ -1,0 +1,68 @@
+.main-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("https://g.foolcdn.com/editorial/images/469296/empty-movie-theater.jpg");
+}
+
+.container {
+  // position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -24%;
+  transform: scaleX(1.3) scaleY(1.3);
+  animation: grow 8s;
+}
+
+// @keyframes enter {
+//   0% {
+//     transform: translateX(-200%);
+//   }
+//   100% {
+//     transform: translateX(0%);
+//   }
+// }
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0) scaleY(0);
+  }
+  100% {
+    transform: scaleX(1.3) scaleY(1.3);
+  }
+}
+
+.title {
+  color: black;
+  text-shadow: 1px 2px 3px rgba(84, 153, 199);
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.welcome_buttons > button {
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  font-size: 15px;
+  border: 1px solid black;
+  width: 80px;
+  height: 25px;
+  box-shadow: 2px 2px 5px black;
+  padding: 0px 9px 15px !important;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(222, 49, 99, 1);
+  line-height: 22px;
+  text-align: center;
+}
+
+.welcome_buttons > button:hover {
+  color: rgba(222, 49, 99, 0.9);
+  background-color: black;
+  border: 1px solid rgba(222, 49, 99, 1);
+}

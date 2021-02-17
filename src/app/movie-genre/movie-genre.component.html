@@ -1,0 +1,20 @@
+<div class="card">
+  <h1>Genre</h1>
+  <div class="content">
+    <div class="image">
+      <img *ngIf="data.name === 'Comedy'" src="assets/comedy-genre.jpg" />
+      <img *ngIf="data.name === 'Romance'" src="assets/romance-genre.jpg" />
+      <img *ngIf="data.name === 'Thriller'" src="assets/thriller-genre.jpg" />
+      <img *ngIf="data.name === 'Animated'" src="assets/animated-genre.jpg" />
+      <img *ngIf="data.name === 'Drama'" src="assets/drama-genre.jpg" />
+      <img *ngIf="data.name === 'Western'" src="assets/westerns-genre.jpg" />
+      <img *ngIf="data.name === 'Gangster'" src="assets/crime-genre.jpg" />
+      <img *ngIf="data.name === 'Action'" src="assets/action-genre.jpg" />
+    </div>
+    <div class="info">
+      <p>
+        {{ data.description }}
+      </p>
+    </div>
+  </div>
+</div>

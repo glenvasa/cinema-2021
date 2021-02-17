@@ -1,0 +1,54 @@
+.card > h1 {
+  color: black;
+  text-align: center;
+  text-shadow: 1px 2px 3px rgba(84, 153, 199);
+  font-weight: 500;
+}
+
+// .content {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+.image {
+  text-align: center;
+}
+
+.image > img {
+  width: 330px;
+  height: 210px;
+  //   box-shadow: 3px 1px 10px black;
+  border: 3px solid black;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.name {
+  color: black;
+  text-align: center !important;
+  text-shadow: 1px 2px 3px rgba(222, 49, 99, 1);
+  font-weight: 700;
+  font-size: 28px !important;
+  margin-bottom: 15px !important;
+}
+
+.bio {
+  text-indent: 33px;
+
+  margin: 0 20px 25px !important;
+}
+
+.life {
+  display: flex;
+  justify-content: center;
+  //   justify-content: space-evenly;
+}
+
+.life > p:first-child {
+  margin-right: 25px;
+}
