@@ -10,6 +10,9 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  /**
+   * function clears localStorage (username and token)
+   */
   logoutUser(): void {
     localStorage.clear();
   }
