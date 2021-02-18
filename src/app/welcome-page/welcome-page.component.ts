@@ -10,7 +10,7 @@ import { LoginFormComponent } from '../login-form/login-form.component';
 })
 export class WelcomePageComponent implements OnInit {
   /**
-   * Gets called when creating an instance of the class
+   * Called upon creating instance of class
    * @param dialog
    */
   constructor(public dialog: MatDialog) {}
