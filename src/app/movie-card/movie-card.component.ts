@@ -16,8 +16,18 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./movie-card.component.scss'],
 })
 export class MovieCardComponent implements OnInit {
+  /**
+   * movies array to be set after getMovies() call
+   */
   movies: any[] = [];
 
+  /**
+   * Called upon creating instance of class
+   * @param fetchApiData 
+   * @param fetchApiData2 
+   * @param dialog 
+   * @param snackBar 
+   */
   constructor(
     public fetchApiData: GetAllMoviesService,
     public fetchApiData2: AddFavoriteMovieService,
@@ -26,19 +36,28 @@ export class MovieCardComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    /**
+     * call on page load to retrieve all movies from database
+     */
     this.getMovies();
   }
 
+  /**
+   * retrieves all movies from database
+   * @returns this.movies
+   */
   getMovies(): void {
     this.fetchApiData.getAllMovies().subscribe((resp: any) => {
-      // console.log(resp);
       this.movies = resp;
-
-      // console.log(this.movies);
       return this.movies;
     });
   }
 
+  /**
+   * function adds a movie to user's FavoriteMovies array
+   * @param id 
+   * @param title 
+   */
   addToFavorites(id: string, title: string) {
     this.fetchApiData2.addFavoriteMovie(id).subscribe((resp: any) => {
       console.log(resp);
@@ -53,6 +72,11 @@ export class MovieCardComponent implements OnInit {
     });
   }
 
+  /**
+   * dialog displays a modal containing movie synopsis and poster image
+   * @param synopsis 
+   * @param image 
+   */
   openSynopsisDialog(synopsis: string, image: string): void {
     this.dialog.open(MovieSynopsisComponent, {
       data: { synopsis, image },
@@ -61,6 +85,12 @@ export class MovieCardComponent implements OnInit {
     });
   }
 
+  /**
+   * dialog diplays modal of movie genre name, description and generic genre image
+   * @param name 
+   * @param description 
+   * @param image 
+   */
   openGenreDialog(name: string, description: string, image: string): void {
     this.dialog.open(MovieGenreComponent, {
       data: { name, description, image },
@@ -69,6 +99,15 @@ export class MovieCardComponent implements OnInit {
     });
   }
 
+  /**
+   * dialog displays movie director name, bio, year of birth, year of death (or n/a if alive), 
+   * and generic director image
+   * @param name 
+   * @param bio 
+   * @param birth 
+   * @param death 
+   * @param image 
+   */
   openDirectorDialog(
     name: string,
     bio: string,
