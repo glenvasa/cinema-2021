@@ -7,6 +7,11 @@ import { MAT_DIALOG_DATA } from "@angular/material/dialog";
   styleUrls: ["./movie-genre.component.scss"],
 })
 export class MovieGenreComponent {
+   /**
+   * called upon creating instance of class
+   * injects genre name, description, and image data into class from movie-card component
+   * @param data 
+   */
   constructor(
     @Inject(MAT_DIALOG_DATA)
     public data: {
