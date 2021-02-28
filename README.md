@@ -15,7 +15,7 @@
 - Users Register and Login from Welcome Screen
 - Users immediately brought to Movie-Card page that displays all movies stored in database.
 - For each movie card, users have the option to click and view a movie's synopsis/genre/director detailed information or add the movie to Favorite Movies List. 
-- Profile page contains User's Favorite Movies List in which User may click and view a favorite movie's synopsis/genre/director detailed information, remove movie from Favorites List, or modify username/password/email address.
+- User's Favorite Movies List may be viewed in Profile page, where User may click and view a favorite movie's synopsis/genre/director detailed information, remove movie from Favorites List, or modify username/password/email address.
 
 
 ## Technical Information
