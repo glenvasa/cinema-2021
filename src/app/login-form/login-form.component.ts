@@ -14,10 +14,10 @@ export class LoginFormComponent implements OnInit {
 
   /**
    * called upon creating instance of class
-   * @param fetchApiData 
-   * @param dialogRef 
-   * @param snackBar 
-   * @param router 
+   * @param fetchApiData
+   * @param dialogRef
+   * @param snackBar
+   * @param router
    */
   constructor(
     public fetchApiData: UserLoginService,
@@ -35,9 +35,10 @@ export class LoginFormComponent implements OnInit {
   loginUser(): void {
     this.fetchApiData.userLogin(this.userData).subscribe(
       (result) => {
-        this.dialogRef.close(); 
+        this.dialogRef.close();
         console.log(result);
         localStorage.setItem('user', result.user.Username);
+        localStorage.setItem('email', result.user.Email);
         localStorage.setItem('token', result.token);
         this.router.navigate(['movies']);
       },
