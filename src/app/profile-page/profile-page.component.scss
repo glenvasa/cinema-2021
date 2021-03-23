@@ -17,8 +17,8 @@
 }
 
 .input {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
   height: 20px;
 }
 
@@ -41,7 +41,7 @@ mat-form-field {
 
 .update_title {
   color: rgba(84, 153, 199);
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 0.5px black;
   margin-bottom: 25px !important;
   margin-top: -10px !important;
   font-size: 22px;
@@ -82,7 +82,7 @@ mat-form-field {
   height: 40px;
   // background-color: rgba(84, 153, 199, 1);
   // background-color: rgba(84, 153, 199, 0.1);
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 1px 1px 1px black;
   color: rgba(222, 49, 99);
   margin-top: 15px;
   text-align: center;
