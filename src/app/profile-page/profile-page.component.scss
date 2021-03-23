@@ -9,7 +9,7 @@
   text-align: center !important;
   width: 40%;
   margin: 85px auto 30px !important;
-  background-color: rgba(256, 256, 256, 0.3);
+  background-color: rgba(256, 256, 256, 0.9);
   border: 1px solid black !important;
   padding-top: 25px;
   box-shadow: 1px 1px 4px black;
@@ -17,13 +17,9 @@
 }
 
 .input {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   height: 20px;
-}
-
-input[type] {
-  color: white;
 }
 
 // .input {
@@ -44,11 +40,11 @@ mat-form-field {
 }
 
 .update_title {
-  color: white;
-  text-shadow: 3px 2px 5px rgba(84, 153, 199);
+  color: rgba(84, 153, 199);
+  text-shadow: 1px 1px 1px black;
   margin-bottom: 25px !important;
   margin-top: -10px !important;
-  font-size: 23px;
+  font-size: 22px;
 }
 
 .update_button {
@@ -86,8 +82,8 @@ mat-form-field {
   height: 40px;
   // background-color: rgba(84, 153, 199, 1);
   // background-color: rgba(84, 153, 199, 0.1);
-  text-shadow: 3px 2px 5px rgba(222, 49, 99, 1);
-  color: white;
+  text-shadow: 2px 2px 3px white;
+  color: rgba(222, 49, 99);
   margin-top: 15px;
   text-align: center;
   line-height: 50px;
