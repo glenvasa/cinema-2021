@@ -8,12 +8,22 @@
   justify-content: center !important;
   text-align: center !important;
   width: 40%;
-  margin: 85px auto 5px !important;
-  background-color: none;
+  margin: 85px auto 30px !important;
+  background-color: rgba(256, 256, 256, 0.3);
   border: 1px solid black !important;
   padding-top: 25px;
   box-shadow: 1px 1px 4px black;
-  background-color: rgba(84, 153, 199, 0.1);
+  // background-color: rgba(84, 153, 199, 0.7);
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  height: 20px;
+}
+
+input[type] {
+  color: white;
 }
 
 // .input {
@@ -34,18 +44,19 @@ mat-form-field {
 }
 
 .update_title {
-  text-shadow: 2px 2px 5px rgba(84, 153, 199);
+  color: white;
+  text-shadow: 3px 2px 5px rgba(84, 153, 199);
   margin-bottom: 25px !important;
   margin-top: -10px !important;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .update_button {
-  color: rgba(84, 153, 199);
-  background-color: black;
+  color: rgba(222, 49, 99, 1);
+  background-color: rgba(0, 0, 0, 0.8);
   font-size: 14px;
   border: 1px solid black;
-  box-shadow: 2px 2px 5px black;
+  // box-shadow: 2px 2px 5px black;
   padding: 0px 0px !important;
   transition: all 0.3s ease-in-out;
   width: 18px;
@@ -57,7 +68,9 @@ mat-form-field {
 .update_button:hover {
   cursor: pointer;
   color: black;
-  background-color: rgba(84, 153, 199);
+  background-color: rgba(222, 49, 99, 1);
+  // border-color: black;
+  // box-shadow: 2px 2px 5px black;
 }
 
 .favorite_movies_title {
@@ -65,7 +78,7 @@ mat-form-field {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: -8px;
+  margin-bottom: -25px !important;
   // margin-left: 40%;
   // margin-right: 40%;
   // border: 1px solid black;
@@ -73,11 +86,12 @@ mat-form-field {
   height: 40px;
   // background-color: rgba(84, 153, 199, 1);
   // background-color: rgba(84, 153, 199, 0.1);
-  text-shadow: 2px 2px 5px rgba(222, 49, 99, 1);
-  color: black;
+  text-shadow: 3px 2px 5px rgba(222, 49, 99, 1);
+  color: white;
   margin-top: 15px;
   text-align: center;
   line-height: 50px;
+  font-size: 26px;
 }
 
 .no_favorites {
@@ -90,7 +104,7 @@ mat-form-field {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 320px));
-  margin-top: 0px;
+  margin-top: -10px !important;
   justify-content: space-evenly;
 }
 
@@ -103,8 +117,7 @@ mat-form-field {
   // justify-content: center;
   // align-items: center;
   text-align: center;
-  width: 240px;
-  height: 400px;
+  width: 220px;
   margin: 30px auto;
   box-shadow: 5px 3px 10px black;
 }
@@ -133,6 +146,7 @@ mat-form-field {
   color: white;
   // background-color: rgba(222, 49, 99, 0.9);
   margin-bottom: 3px !important;
+  margin-top: -5px !important;
   padding: 10px;
   text-shadow: 5px 3px 7px white;
   line-height: 27px;
@@ -147,16 +161,19 @@ mat-form-field {
 
 .card_image {
   width: 180px;
-  height: 260px;
+  height: 270px;
   // border: 1px solid black;
   margin: auto;
+  margin-bottom: 5px;
   box-shadow: 5px 3px 10px black;
 }
 
 .buttons {
   display: flex;
   text-align: center;
-  margin: 12px 20px 10px 20px;
+  margin: auto !important;
+  margin-left: 10px !important;
+  margin-top: 5px !important;
 }
 
 .buttons > button {
@@ -164,11 +181,13 @@ mat-form-field {
   background-color: rgba(222, 49, 99, 1);
   font-size: 14px;
   border: 1px solid black;
+  border-radius: 4px;
   margin-right: 4px;
+
   box-shadow: 2px 2px 5px black;
   padding: 0px 0px !important;
   transition: all 0.3s ease-in-out;
-  width: 18px;
+  width: 20px;
   height: 25px;
   line-height: 14px;
 }
