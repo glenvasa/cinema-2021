@@ -28,12 +28,13 @@
   //   flex-wrap: wrap;
   // background-color: rgba(215, 219, 221);
   background-color: rgba(84, 153, 199);
+  border: 1px outset black;
   // justify-content: center;
   // align-items: center;
   text-align: center;
   width: 340px;
   margin: 30px auto;
-  box-shadow: 5px 3px 10px black;
+  box-shadow: 4px 3px 5px black;
 }
 
 .card_header {
@@ -55,19 +56,22 @@
 }
 
 .card_title {
-  font-size: 25px;
+  font-size: 28px;
   color: white;
   // background-color: rgba(222, 49, 99, 0.9);
-  margin-bottom: 7px !important;
+  margin-bottom: 9px !important;
+
+  margin-top: -5px !important;
   padding: 10px;
-  text-shadow: 5px 3px 7px white;
+  text-shadow: 5px 3px 5px white;
   line-height: 27px;
 }
 
 .card_subtitle {
   color: white;
   font-size: 16px;
-  text-shadow: 5px 3px 10px black;
+
+  text-shadow: 1px 1px 3px black;
 }
 
 .card_image {
@@ -80,17 +84,22 @@
 
 .buttons {
   text-align: center;
-  margin: 8px 0px 0px 10px;
+  margin: 12px 0px 0px 10px;
 }
 
 .buttons > button {
+  text-align: center;
   color: black;
   background-color: rgba(222, 49, 99, 1);
   font-size: 18px;
   border: 1px solid black;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
   margin-right: 10px;
   box-shadow: 2px 2px 5px black;
   padding: 0px 9px !important;
+
   transition: all 0.3s ease-in-out;
 }
 
