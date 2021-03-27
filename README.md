@@ -7,8 +7,8 @@
 
 ## Screenshots
 
-<img src="src/assets/Director-Modal.png">
-<img src="src/assets/Profile-Modal.png">
+<img src="src/assets/Screenshot (266).png">
+<img src="src/assets/Screenshot (267).png">
 
 ## Features
 
