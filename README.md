@@ -1,6 +1,6 @@
 # MyFlix-Client (Angular)
 
-- Client-side application developed with Angular.
+- Client-side movies application developed with Angular.
 - Utilizes MyFlix REST API hosted at https://myflix2020.herokuapp.com. 
 - Server-side code is found at https://github.com/glenvasa/movie_api.
 - MongoDB stores User and Movie Collections.
@@ -27,3 +27,4 @@
 ## Deployed Application
 
 - https://glenvasa.github.io/cinema-2021
+- (username: movies/ password: movies to test, or register a new user)
